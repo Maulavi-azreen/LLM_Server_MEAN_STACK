@@ -9,7 +9,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-    origin: 'http://localhost:4200', // Adjust based on your Angular app's URL
+    origin: '*', // Adjust based on your Angular app's URL
     methods: ['POST', 'GET'],
     allowedHeaders: ['Content-Type'],
 }));
